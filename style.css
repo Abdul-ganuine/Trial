@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home-page{
+    height: 100vh;
+    width: 100%;
+    background:hsl(30, 38%, 92%);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 100%;
+    max-width: 270px;
+    height: 400px;
+}
+.image-box{
+    background-image:url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-size:cover; 
+    border-radius: 10px 0 0 10px ; 
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.text-box{
+   background-color: white;
+   border-radius: 0 10px 10px 0 ;
+}
+.perfume{
+    margin: 30px auto 15px auto ;
+    color: hsl(228, 12%, 48%);
+}
+.header{
+    font-family:'Montserrat' ,  Arial, Helvetica, sans-serif;
+    line-height:32px;
+    padding: 0;
+    margin: 0;
+    max-width: 200px;
+    font-size: 30px;
+    margin-bottom:10px;
+}
+.header-info{
+    margin-bottom: 15px;
+}
+.price{
+    font-size:30px;
+    color: hsl(158, 36%, 37%);
+    margin-bottom: 15px;
+}
+.btn{
+    width: 200px;
+    border: none;
+    font-weight:700;
+    border-radius: 10px;
+    padding: 10px 8px;
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+}
+@media(max-width:550px){
+    .home-page{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .box{
+        max-width: 90%;
+        height:230px ;
+        margin: auto;
+    }
+    .image-box{
+        height: 260px;
+        background-image:url(./images/image-product-mobile.jpg);
+    background-position: center;
+    background-size:cover; 
+        border-radius: 10px 10px 0 0;
+        margin: 0 auto;
+    }
+    .header{
+        max-width:300px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .text-box{
+        height: auto;
+        border-radius: 0 0 10px 10px;
+        margin: 0 auto;
+    }
+    .container{
+        width: 90%;
+    }
+    .perfume{
+        margin: 15px auto 10px auto ; 
+    }
+    .btn{
+        width: 280px;
+        padding: 14px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
